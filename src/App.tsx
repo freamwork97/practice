@@ -9,10 +9,11 @@ import Home from "./components/Home";
 import Item from "./components/Item"; // 아이템 상세 페이지 컴포넌트 임포트
 import NotFound from "./NotFound";
 import LoginWrapper from "./components/LoginWrapper";
-import { BrowserRouter as /*Router,*/ Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ItemLayout from "./components/ItemLayout";
 
 function App() {
+  console.log(Router);
   return (
     <SessionProvider>
       <div className="app-container">
