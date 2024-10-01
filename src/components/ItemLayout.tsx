@@ -19,7 +19,7 @@ const ItemLayout: React.FC = () => {
   const [selectedItem, setSelectedItem] = useState<CartItem | null>(null);
   const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
-
+  console.log(searchParams);
   const filteredItems = useMemo(
     () =>
       cart.filter((item) =>

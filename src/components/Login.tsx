@@ -9,7 +9,7 @@ interface LoginProps {
 const Login: React.FC<LoginProps> = memo(({ login, inputClassName }) => {
   const [name, setName] = useState("");
   const [id, setId] = useState<number | "">("");
-
+  console.log(inputClassName);
   const handleLogin = () => {
     if (name && id) {
       login(Number(id), name);
